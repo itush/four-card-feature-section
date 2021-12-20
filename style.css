@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+/*Primary*/
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/*Neutral*/
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{font-family: 'Poppins', sans-serif;
+background: var(--Very-Light-Gray);}
+
+h1{text-align: center;
+color: var(--Very-Dark-Blue);}
+
+h1 span{font-weight: 200;
+}
+.upr p{text-align: center;
+color: var(--Grayish-Blue);
+margin-top: 1%;
+font-size: small;
+}
+
+.upr{margin-top: 2.5%;}
+.lwr{
+    display: flex;   
+    justify-content:center;
+    align-items: center;
+    margin: 5% 0%;
+}
+.left{
+    background: white;
+    max-width: 288px;
+    border-top: 5px solid var(--Cyan);
+    border-radius: 10px;
+    padding: 2% 2% 1% 2%;
+    margin-right: 2.5%;
+    box-shadow: 5px 5px 5px var(--Grayish-Blue);
+}
+.left p{
+    color: var(--Grayish-Blue);
+    font-size: small;
+}
+.left img{   
+    margin: 20% 0% 0% 75%;
+}
+.m1 p{
+    color: var(--Grayish-Blue);
+    font-size: small;
+}
+.m1 img{   
+    margin: 20% 0% 0% 75%;
+}
+.m2 p{
+    color: var(--Grayish-Blue);
+    font-size: small;
+    
+}
+.m2 img{   
+    margin: 20% 0% 0% 75%;
+}
+.right p{
+    color: var(--Grayish-Blue);
+    font-size: small;
+}
+.right img{   
+    margin: 20% 0% 0% 75%;
+}
+
+.m1{
+    background: white;
+    max-width: 288px;
+    border-radius: 10px;
+    border-top: 5px solid var(--Red);
+    padding: 10% 10% 5% 10%;    
+    box-shadow: 5px 5px 5px var(--Grayish-Blue);
+}
+.m2{
+    background: white;
+    max-width: 288px;
+    border-radius: 10px;
+    border-top: 5px solid var(--Orange);
+    padding: 10% 10% 5% 10%; 
+    margin-top: 10%;
+    box-shadow: 5px 5px 5px var(--Grayish-Blue);
+    
+}
+.right{
+    background: white;
+    max-width:288px;
+    border-radius: 10px;
+    border-top: 5px solid var(--Blue);
+    padding: 2% 2% 1% 2%;
+    margin-left: 2.5%;
+    box-shadow: 5px 5px 5px var(--Grayish-Blue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 600px) {
+    .upr{margin-top: 20%;}
+    h1{font-size: x-large;}
+    .upr p{margin: 5%;}
+    .upr p br{
+        display: none;
+    }
+    .lwr{flex-direction: column;}
+    .left, .right {
+        margin: 5%;
+        padding: 5%;
+    }
+    .m1, .m2{ padding: 7.5%;}
+    footer{
+        margin-top: 20%;
+    }
+}
